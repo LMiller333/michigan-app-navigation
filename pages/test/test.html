@@ -1,0 +1,333 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>TEST</ion-title>
+    </ion-navbar>
+    <ion-toolbar>
+        <ion-segment [(ngModel)]="icons" color="secondary">
+          <ion-segment-button value="places">
+            Places
+          </ion-segment-button>
+          <ion-segment-button value="people">
+            People
+          </ion-segment-button>
+          <ion-segment-button value="classes">
+            Classes
+          </ion-segment-button>
+          <ion-segment-button value="library" class="hide">
+            Library
+          </ion-segment-button>
+        </ion-segment>
+  
+      </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+  
+  
+  <ion-list>
+    <ion-list-header>
+      Computer Labs
+    </ion-list-header>
+    <ion-item>
+      <h2>Angell Hall Courtyard</h2>
+      <p>
+        
+        <ion-icon name="logo-windows" item-start></ion-icon>
+        <ion-icon name="logo-apple" item-start></ion-icon>
+        <ion-icon name="print" item-start></ion-icon>
+        <span>CAEN  </span>
+      </p>
+    </ion-item>
+    <ion-item>
+      <h2>Caident</h2>
+      <p>
+        <ion-icon name="logo-windows" item-start></ion-icon>
+        <ion-icon name="print" item-start></ion-icon>
+      </p>
+    </ion-item>
+    <ion-item>
+        <h2>Print Station Example</h2>
+        <p>
+          <ion-icon name="print" item-start></ion-icon>
+        </p>
+      </ion-item>
+      <ion-item>
+          <h2>Duderstadt Engineering Lab</h2>
+          <p>
+            
+            <ion-icon name="print" item-start></ion-icon>
+            <span>CAEN  </span>
+          </p>
+        </ion-item>
+  
+  
+  </ion-list>
+  
+    <ion-item>
+        Saturday, September 29 <ion-icon name="calendar" item-start></ion-icon>
+    </ion-item>
+  <!-- <ion-card>
+      <ion-list>
+          <ion-list-header>
+              <ion-icon name="alarm" item-start></ion-icon>
+              <h2>FAFSA DEADLINE</h2>
+              Author Name
+            </ion-list-header>
+            <ion-item text-wrap>
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor ipsum id tortor rhoncus, feugiat laoreet odio posuere. Phasellus at nunc felis.
+            </ion-item>
+        </ion-list>
+  
+  </ion-card> -->
+  
+    <ion-list>
+        <ion-list-header>Hours
+          </ion-list-header>
+          <ion-item>
+              Breakfast 9-11am
+          </ion-item>
+          <ion-item>
+              Lunch 11-1pm
+          </ion-item>
+      </ion-list>
+  
+      <ion-list>
+          <ion-list-header>Menus
+            </ion-list-header>
+            <ion-item>
+                Breakfast
+            </ion-item>
+            <ion-item>
+                Lunch
+            </ion-item>
+        </ion-list>
+  
+  <!-- <ion-item>
+    <ion-select>
+      <ion-label>Gender</ion-label>
+      <ion-option>
+        date 1
+      </ion-option>
+      <ion-option>
+          date 2
+      </ion-option>
+      <ion-option>
+          date 3
+      </ion-option>
+    </ion-select>
+  </ion-item> -->
+  
+    <ion-card>
+  
+      <ion-card-header>
+        My Card Header
+      </ion-card-header>
+    
+      <ion-card-content>
+        This is my card content
+      </ion-card-content>
+    
+    </ion-card>
+  
+    <ion-item>
+      <ion-label>Example Toggle Switch</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+  
+    <ion-item>
+      <ion-range [(ngModel)]="brightness">
+        <ion-icon range-left small name="sunny"></ion-icon>
+        <ion-icon range-right name="sunny"></ion-icon>
+      </ion-range>
+    </ion-item>
+  
+    <ion-content padding>
+      <button ion-button block color="dark" (click)="doAlert()">Show Basic Alert</button>
+    </ion-content>
+  
+  
+    <ion-list>
+      <ion-item>
+        <ion-icon name="radio-button-on" item-start></ion-icon>
+          Crisler Center - Lot SC 7 
+          <p>Description of bus stop</p>
+  
+      </ion-item>
+      <ion-item>
+        <ion-icon name="radio-button-on" item-start></ion-icon>
+          Transportation Gate
+          <p>Description of bus stop</p>
+  
+      </ion-item>
+      <ion-item>
+        <ion-icon name="radio-button-on" item-start></ion-icon>
+          Facilities Services Building
+          <p>Description of bus stop</p>
+  
+      </ion-item>
+      <ion-item>
+        <ion-icon name="radio-button-on" item-start></ion-icon>
+          Green &amp; Hoover
+          <p>Description of bus stop</p>
+  
+      </ion-item>
+      <ion-item>
+        <ion-icon name="radio-button-on" item-start></ion-icon>
+          Intramural Building - Outbound
+          <p>Description of bus stop</p>
+  
+      </ion-item>
+    </ion-list>
+  
+    <ion-list>
+        <ion-item>
+          <ion-icon name="locate" item-start></ion-icon>
+            Crisler Center - Lot SC 7 
+            <p>Description of bus stop</p>
+    
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate" item-start></ion-icon>
+            Transportation Gate
+            <p>Description of bus stop</p>
+    
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate" item-start></ion-icon>
+            Facilities Services Building
+            <p>Description of bus stop</p>
+    
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate" item-start></ion-icon>
+            Green &amp; Hoover
+            <p>Description of bus stop</p>
+    
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate" item-start></ion-icon>
+            Intramural Building - Outbound
+            <p>Description of bus stop</p>
+    
+        </ion-item>
+      </ion-list>
+  
+  
+      <ion-list>
+          <ion-item>
+            <ion-icon name="pin" item-start></ion-icon>
+              Crisler Center - Lot SC 7 
+              <p>Description of bus stop</p>
+      
+          </ion-item>
+          <ion-item>
+            <ion-icon name="pin" item-start></ion-icon>
+              Transportation Gate
+              <p>Description of bus stop</p>
+      
+          </ion-item>
+          <ion-item>
+            <ion-icon name="pin" item-start></ion-icon>
+              Facilities Services Building
+              <p>Description of bus stop</p>
+      
+          </ion-item>
+          <ion-item>
+            <ion-icon name="pin" item-start></ion-icon>
+              Green &amp; Hoover
+              <p>Description of bus stop</p>
+      
+          </ion-item>
+          <ion-item>
+            <ion-icon name="pin" item-start></ion-icon>
+              Intramural Building - Outbound
+              <p>Description of bus stop</p>
+      
+          </ion-item>
+        </ion-list>
+  
+        <ion-list>
+            <ion-item>
+              <ion-icon name="radio-button-off" item-start></ion-icon>
+                Crisler Center - Lot SC 7 
+                <p>Description of bus stop</p>
+        
+            </ion-item>
+            <ion-item>
+              <ion-icon name="radio-button-off" item-start></ion-icon>
+                Transportation Gate
+                <p>Description of bus stop</p>
+        
+            </ion-item>
+            <ion-item>
+              <ion-icon name="radio-button-off" item-start></ion-icon>
+                Facilities Services Building
+                <p>Description of bus stop</p>
+        
+            </ion-item>
+            <ion-item>
+              <ion-icon name="radio-button-off" item-start></ion-icon>
+                Green &amp; Hoover
+                <p>Description of bus stop</p>
+        
+            </ion-item>
+            <ion-item>
+              <ion-icon name="radio-button-off" item-start></ion-icon>
+                Intramural Building - Outbound
+                <p>Description of bus stop</p>
+        
+            </ion-item>
+          </ion-list>
+  
+  
+    <ion-list>
+      <ion-list-header>
+        DINING HALLS
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>East Quad</ion-label>
+        <ion-checkbox checked="true"></ion-checkbox>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>South Quad</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Mosher Jordan</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+  
+      <ion-list-header>
+        CAFES
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Fireside Cafe</ion-label>
+        <ion-checkbox checked="true"></ion-checkbox>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Bert's Cafe</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+  
+      <ion-list-header>
+        MARKETS
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>U-Go Pierpont</ion-label>
+        <ion-checkbox checked="false"></ion-checkbox>
+      </ion-item>
+  
+    </ion-list>
+  
+  </ion-content>
+  
+  
+  

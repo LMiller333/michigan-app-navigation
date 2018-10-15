@@ -1,0 +1,68 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Search</ion-title>
+    </ion-navbar>
+
+    <ion-toolbar>
+      
+      <ion-segment [(ngModel)]="searchType" color="extra-light">
+        <ion-segment-button value="places">
+          Places
+        </ion-segment-button>
+        <ion-segment-button value="people">
+          People
+        </ion-segment-button>
+        <ion-segment-button value="classes">
+          Classes
+        </ion-segment-button>
+      </ion-segment>
+
+    </ion-toolbar>
+
+    <ion-toolbar>
+        <ion-searchbar (ionInput)="getItems($event)" color="extra-light"></ion-searchbar>
+      </ion-toolbar>
+
+</ion-header>
+  
+  <ion-content padding class="outer-content">
+    <div [ngSwitch]="searchType">
+      <div *ngSwitchCase="'places'">
+          <p >Search <strong>PLACES</strong> to find buildings, departments, dining locations, bus stops, parking lots, and more!</p>
+          <p>Example searches:</p>
+              <ul>
+                <li>Mosher Jordan</li>
+                <li>Shapiro</li>
+                <li>CAPS</li>
+              </ul>
+      </div>
+      <div *ngSwitchCase="'people'">
+          <p >Search <strong>PEOPLE</strong> to find people and groups within MCommunity.</p>
+          <p>You can search for:</p>
+              <ul>
+                <li>Person Name (Last name is required)</li>
+                <li>Email or Uniqname</li>
+                <li>Phone Number</li>
+                <li>Group Name</li>
+              </ul>
+      </div>
+
+      <div *ngSwitchCase="'classes'">
+          <p >Search <strong>CLASSES</strong> to search class titles, numbers, and descriptions from the course catalog. </p>
+          <p>Example searches:</p>
+              <ul>
+                <li>MATH 105</li>
+                <li>Public Health</li>
+                <li>Dinosaurs</li>
+              </ul>
+      </div>
+    </div>
+  
+    
+  
+  
+  </ion-content>
+  
+  
+  

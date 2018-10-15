@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+<!-- Banner -->
+  <ion-card class="banner">
+    <ion-card-header>
+      THIS IS A BANNER/PROMO
+    </ion-card-header>
+  </ion-card>
+
+<h2>Your Dashboard</h2>
+
+<!-- Today's Classes -->
+  <ion-card class="upcoming-classes">
+    <ion-card-header>
+        <ion-icon name="calendar" item-start></ion-icon>
+        Today's Upcoming Classes
+      </ion-card-header>
+    <ion-list>
+      <ion-item>
+        Psychology 101
+      </ion-item>
+      <ion-item style="border-bottom: none;">
+        Calculus 101
+        </ion-item>
+    </ion-list>
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+<!-- App Favorites -->
+  <ion-card>
+    <ion-card-header style="border-bottom: 0.55px solid #c8c7cc">
+        <ion-icon name="star" item-start></ion-icon>
+      My Favorites
+    </ion-card-header>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            <button ion-button icon-start full text-wrap class="fav-button" color="secondary">
+                <ion-icon name="bus"></ion-icon>
+                Greene &amp; Hoover</button>
+          </ion-col>
+          <ion-col col-4>
+              <button ion-button icon-start full text-wrap class="fav-button" color="secondary">
+                  <ion-icon name="restaurant"></ion-icon>
+                  South Quad</button>
+          </ion-col>
+          <ion-col col-4>
+            <button ion-button icon-start full text-wrap class="fav-button" color="secondary">
+              <ion-icon name="bicycle"></ion-icon>
+              CCRB</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card>
+
+<!-- Pinned Widgets -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button icon-start full class="widget">
+            <ion-icon name="bus"></ion-icon>
+            Bus</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button icon-start full class="widget">
+          <ion-icon name="restaurant"></ion-icon>
+          Dining</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button full text-wrap class="widget">
+          <ion-icon name="desktop"></ion-icon>
+          Computer Labs</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button icon-start full class="widget" (click)="goToWidgets();">
+          <ion-icon name="add-circle"></ion-icon>
+          Add</button>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+<!-- Uninned Widgets -->
+<h2>More</h2>
+<ion-list>
+  <ion-item>
+    After Hours Transit <ion-icon name="arrow-forward" item-end></ion-icon>
+  </ion-item>
+  <ion-item>
+    Events <ion-icon name="arrow-forward" item-end></ion-icon>
+  </ion-item>
+  <ion-item>
+    Parking Lots <ion-icon name="arrow-forward" item-end></ion-icon>
+  </ion-item>
+  <ion-item>
+    Rec Sports <ion-icon name="arrow-forward" item-end></ion-icon>
+  </ion-item>
+</ion-list>
+
+</ion-content>
+
+

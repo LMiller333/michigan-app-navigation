@@ -1,0 +1,29 @@
+page-home {
+
+}
+
+.toolbar-background{
+    background: color($colors, primary);
+}
+
+.toolbar-title {
+    color:color($colors, extra-light);
+}
+
+.hide{
+    display:none;
+}
+
+.widget {
+    height: 10vh;
+    text-align: center;
+}
+
+.banner {
+    border-radius: 10px;
+    background: color($colors, secondary);
+}
+
+.fav-button{
+    height: 10vh;
+}
