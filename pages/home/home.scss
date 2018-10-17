@@ -20,8 +20,9 @@ page-home {
 }
 
 .banner {
-    border-radius: 10px;
     background: color($colors, secondary);
+    border-radius: 0px;
+    box-shadow:none;
 }
 
 .fav-button{

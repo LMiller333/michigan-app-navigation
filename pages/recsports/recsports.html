@@ -1,0 +1,62 @@
+<!--
+  Generated template for the RecsportsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Rec Sports</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+            <ion-icon color="extra-light" name="add"></ion-icon>
+          </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Your Favorites</h2>
+  <ion-card (click)="openCCRB()">
+      <img src="https://recsports.umich.edu/wp-content/uploads/og-ccrb.jpg"/>
+      <ion-card-content>
+        <ion-card-title>CCRB  <ion-icon name="star"></ion-icon></ion-card-title>
+        <p>Open Now, 5:30 AM - 11:00 PM</p>
+      </ion-card-content>
+      
+  </ion-card>
+  
+  <h2>More</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+          <ion-card (click)="openIMSB()">
+              <img src="https://recsports.umich.edu/wp-content/uploads/og-ccrb.jpg"/>
+              <ion-card-content>
+                <ion-card-title>IMSB</ion-card-title>
+                <p>Open Now, 6:00 AM - 11:00 PM</p>
+              </ion-card-content>
+              
+          </ion-card>
+      </ion-col>
+      <ion-col col-6>
+          <ion-card>
+              <img src="https://recsports.umich.edu/wp-content/uploads/og-renovations.jpg"/>
+              <ion-card-content>
+                <ion-card-title>NCRB</ion-card-title>
+                <p>Open Now, 6:00 AM - 11:00 PM</p>
+              </ion-card-content>
+              
+          </ion-card>
+      </ion-col>
+    </ion-row> 
+  </ion-grid>
+
+  <button ion-button full color="secondary">
+      <ion-icon name="add" style="margin-right:10px"></ion-icon>
+        Add to Dashboard</button>
+
+</ion-content>

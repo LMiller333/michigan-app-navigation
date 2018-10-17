@@ -26,8 +26,13 @@ ion-content {
 .card, {
     width: calc(100% - 16px);
     margin:8px;
+    border-radius:5px;
 }
 
 .back-button{
     color: color($colors, extra-light);
+}
+
+button{
+    border-radius:5px !important;
 }

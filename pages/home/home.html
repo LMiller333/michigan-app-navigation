@@ -15,7 +15,35 @@
     </ion-card-header>
   </ion-card>
 
-<h2>Your Dashboard</h2>
+<h2>Favorites</h2>
+<!-- App Favorites -->
+<!-- <ion-card>
+    <ion-card-header style="border-bottom: 0.55px solid #c8c7cc">
+        <ion-icon name="star" item-start></ion-icon>
+      My Favorites
+    </ion-card-header> -->
+    <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            <button ion-button icon-start full text-wrap class="fav-button" color="primary" (click)="goToGreeneHoover()">
+                <ion-icon name="bus"></ion-icon>
+                Greene &amp; Hoover</button>
+          </ion-col>
+          <ion-col col-4>
+              <button ion-button icon-start full text-wrap class="fav-button" color="primary" (click)="goToNorthQuad()">
+                  <ion-icon name="restaurant"></ion-icon>
+                  North Quad</button>
+          </ion-col>
+          <ion-col col-4>
+            <button ion-button icon-start full text-wrap class="fav-button" color="primary" (click)="goToCCRB()">
+              <ion-icon name="bicycle"></ion-icon>
+              CCRB</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  <!-- </ion-card> -->
+
+  <h2>Dashboard</h2>
 
 <!-- Today's Classes -->
   <ion-card class="upcoming-classes">
@@ -36,32 +64,7 @@
     </ion-card-content>
   </ion-card>
 
-<!-- App Favorites -->
-  <ion-card>
-    <ion-card-header style="border-bottom: 0.55px solid #c8c7cc">
-        <ion-icon name="star" item-start></ion-icon>
-      My Favorites
-    </ion-card-header>
-    <ion-grid>
-        <ion-row>
-          <ion-col col-4>
-            <button ion-button icon-start full text-wrap class="fav-button" color="secondary">
-                <ion-icon name="bus"></ion-icon>
-                Greene &amp; Hoover</button>
-          </ion-col>
-          <ion-col col-4>
-              <button ion-button icon-start full text-wrap class="fav-button" color="secondary">
-                  <ion-icon name="restaurant"></ion-icon>
-                  South Quad</button>
-          </ion-col>
-          <ion-col col-4>
-            <button ion-button icon-start full text-wrap class="fav-button" color="secondary">
-              <ion-icon name="bicycle"></ion-icon>
-              CCRB</button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-  </ion-card>
+
 
 <!-- Pinned Widgets -->
   <ion-grid>
@@ -72,7 +75,7 @@
             Bus</button>
       </ion-col>
       <ion-col col-6>
-        <button ion-button icon-start full class="widget">
+        <button ion-button icon-start full class="widget" (click)="goToDining();">
           <ion-icon name="restaurant"></ion-icon>
           Dining</button>
       </ion-col>
@@ -95,18 +98,11 @@
 <!-- Uninned Widgets -->
 <h2>More</h2>
 <ion-list>
-  <ion-item>
-    After Hours Transit <ion-icon name="arrow-forward" item-end></ion-icon>
-  </ion-item>
-  <ion-item>
-    Events <ion-icon name="arrow-forward" item-end></ion-icon>
-  </ion-item>
-  <ion-item>
-    Parking Lots <ion-icon name="arrow-forward" item-end></ion-icon>
-  </ion-item>
-  <ion-item>
-    Rec Sports <ion-icon name="arrow-forward" item-end></ion-icon>
-  </ion-item>
+  <button ion-item>After Hours Transit </button>
+  <button ion-item (click)="goToRecSports();">Rec Sports </button>
+  <button ion-item >Campus Events</button>
+  <button ion-item >Parking Lots</button>
+  <button ion-item >Athletic Calendar </button>
 </ion-list>
 
 </ion-content>

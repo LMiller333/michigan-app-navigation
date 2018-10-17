@@ -13,9 +13,12 @@
         <ion-segment-button value="people">
           People
         </ion-segment-button>
-        <ion-segment-button value="classes">
-          Classes
+        <ion-segment-button value="courseguide">
+          Course Guide
         </ion-segment-button>
+        <!-- <ion-segment-button value="librarycatalog">
+          Library 
+        </ion-segment-button> -->
       </ion-segment>
 
     </ion-toolbar>
@@ -48,8 +51,8 @@
               </ul>
       </div>
 
-      <div *ngSwitchCase="'classes'">
-          <p >Search <strong>CLASSES</strong> to search class titles, numbers, and descriptions from the course catalog. </p>
+      <div *ngSwitchCase="'courseguide'">
+          <p >Search <strong>COURSE GUIDE</strong> to search class titles, numbers, and descriptions from the course catalog. </p>
           <p>Example searches:</p>
               <ul>
                 <li>MATH 105</li>
@@ -57,6 +60,17 @@
                 <li>Dinosaurs</li>
               </ul>
       </div>
+
+      <!-- <div *ngSwitchCase="'librarycatalog'">
+        <p >Search <strong>LIBRARY</strong> to search library databases for articles, books, and more. </p>
+        <p>Example searches:</p>
+            <ul>
+              <li>MATH 105</li>
+              <li>Public Health</li>
+              <li>Dinosaurs</li>
+            </ul>
+    </div> -->
+
     </div>
   
     
